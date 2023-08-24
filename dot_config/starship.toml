@@ -1,0 +1,62 @@
+#add_newline = false
+
+[character]
+#symbol = "➜"
+#error_symbol = "✗"
+#use_symbol_for_status = true
+
+[cmd_duration]
+min_time = 1
+show_milliseconds = true
+format = "時間 [$duration]($style)"
+style = 'bold purple'
+
+[conda]
+disabled = true
+
+[crystal]
+disabled = true
+
+[elixir]
+disabled = true
+
+[elm]
+disabled = true
+
+[erlang]
+disabled = true
+
+[git_status]
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "😰"
+diverged = "😵"
+up_to_date = "✓"
+untracked = "🤷"
+stashed = "📦"
+modified = "📝"
+staged = '[++\($count\)](green)'
+renamed = "👅"
+deleted = "🗑"
+
+[golang]
+disabled = true
+
+[java]
+disabled = true
+
+[julia]
+disabled = true
+
+[memory_usage]
+disabled = false
+
+[time]
+disabled = false
+format = "🕙[\\[ $time \\]]($style) "
+time_format = "%T"
+style = 'bold blue'
+
+
+
+
