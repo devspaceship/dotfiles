@@ -1,3 +1,9 @@
 # Dotfiles
 
-My configuration files
+My dotfiles managed with chezmoi
+
+## Requirements
+
+- Oh My Zsh
+- Starship
+- Chezmoi
