@@ -23,9 +23,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-## Plugins Config
-# Timer Config
-# TIMER_PRECISION=1
+# Plugins Config
 TIMER_FORMAT='[%d]'
 
 
