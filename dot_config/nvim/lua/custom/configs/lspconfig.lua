@@ -13,7 +13,7 @@ local servers = {
   "dockerls",
   "lua_ls",
   "marksman",
-  "mdx_analyzer",
+  -- "mdx_analyzer",
   "prismals",
   "pyright",
   "remark_ls",
