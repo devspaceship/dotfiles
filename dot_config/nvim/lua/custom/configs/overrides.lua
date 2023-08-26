@@ -40,6 +40,11 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
+    "prisma-language-server",
+
+    -- Docker
+    "dockerfile-language-server",
+    "docker-compose-language-service",
 
     -- c/cpp stuff
     "clangd",
