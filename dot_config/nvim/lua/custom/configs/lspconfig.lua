@@ -5,18 +5,15 @@ local lspconfig = require "lspconfig"
 
 -- if you just want default config for the servers then put them in a table
 local servers = {
-  "html",
-  "cssls",
-  "tsserver",
   "clangd",
+  "cssls",
   "docker_compose_language_service",
   "dockerls",
+  "html",
   "lua_ls",
   "marksman",
-  -- "mdx_analyzer",
   "prismals",
   "pyright",
-  "remark_ls",
   "ruff_lsp",
   "rust_analyzer",
   "tailwindcss",

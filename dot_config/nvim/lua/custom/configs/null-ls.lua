@@ -10,6 +10,7 @@ local sources = {
   -- Formatting
   -- b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
   -- b.formatting.prettier.with { filetypes = { "html", "markdown", "css"} },
+  b.formatting.black,
   b.formatting.clang_format,
   b.formatting.mdformat,
   b.formatting.nginx_beautifier,
