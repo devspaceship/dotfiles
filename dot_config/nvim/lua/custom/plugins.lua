@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -25,7 +25,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -47,9 +47,27 @@ local plugins = {
     end,
   },
 
+  -- Github Copilot
   {
     "github/copilot.vim",
     lazy = false,
+  },
+
+  -- Trouble
+  {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    cmd = "TroubleToggle",
+  },
+
+  -- Markdown Preview
+  {
+    "iamcco/markdown-preview.nvim",
+    ft = "markdown",
+    cmd = { "MarkdownPreview" },
+    build = function()
+      vim.fn["mkdp#util#install"]()
+    end,
   },
 
   -- To make a plugin not be loaded

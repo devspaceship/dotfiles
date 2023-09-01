@@ -9,15 +9,15 @@ COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="dd/mm/yyyy"
 
 plugins=(
-    rust
     colored-man-pages
     command-not-found
     copyfile
     docker
     docker-compose
+    gh
     git
-    magic-enter
-    python
+    gitfast
+    rust
     sudo
     timer
 )
