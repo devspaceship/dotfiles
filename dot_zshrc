@@ -62,3 +62,4 @@ alias dclf="docker compose logs -f"
 alias dce="docker compose exec"
 alias dcr="docker compose run"
 
+fpath+="$HOME/.zsh/completions"

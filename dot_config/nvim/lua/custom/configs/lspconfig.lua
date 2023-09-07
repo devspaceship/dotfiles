@@ -17,6 +17,7 @@ local servers = {
   "ruff_lsp",
   "rust_analyzer",
   "tailwindcss",
+  "taplo",
   "tsserver",
 }
 
