@@ -61,3 +61,8 @@ alias dce="docker compose exec"
 alias dcr="docker compose run"
 
 fpath+="$HOME/.zsh/completions"
+
+# Created by `pipx` on 2024-01-11 22:09:36
+export PATH="$PATH:/Users/devspaceship/.local/bin"
+export PATH="$PATH:/usr/local/opt/ruby/bin"
+eval "$(rbenv init - zsh)"
