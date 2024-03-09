@@ -1,0 +1,21 @@
+[window]
+decorations = "None"
+opacity = 0.9
+blur = true
+startup_mode = "SimpleFullscreen"
+
+[scrolling]
+history = 5000
+
+[font]
+normal = { family = "FiraCode Nerd Font Mono", style = "Retina" }
+size = 20
+builtin_box_drawing = false
+
+[colors]
+transparent_background_colors = true
+
+[cursor]
+style = { blinking = "Always" }
+blink_timeout = 0
+
