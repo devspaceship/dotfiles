@@ -66,3 +66,4 @@ fpath+="$HOME/.zsh/completions"
 export PATH="$PATH:/Users/devspaceship/.local/bin"
 export PATH="$PATH:/usr/local/opt/ruby/bin"
 eval "$(rbenv init - zsh)"
+
