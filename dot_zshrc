@@ -65,5 +65,5 @@ fpath+="$HOME/.zsh/completions"
 # Created by `pipx` on 2024-01-11 22:09:36
 export PATH="$PATH:/Users/devspaceship/.local/bin"
 export PATH="$PATH:/usr/local/opt/ruby/bin"
-eval "$(rbenv init - zsh)"
+# eval "$(rbenv init - zsh)"
 
