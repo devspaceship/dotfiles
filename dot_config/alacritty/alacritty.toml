@@ -6,7 +6,7 @@ import = [
 decorations = "Full"
 opacity = 0.80
 blur = true
-startup_mode = "Fullscreen"
+startup_mode = "SimpleFullscreen"
 dynamic_title = false
 resize_increments = true
 
