@@ -1,8 +1,4 @@
 --[[
-    - https://learnxinyminutes.com/docs/lua/
-    - :help lua-guide
-    MOST IMPORTANTLY, we provide a keymap "<space>sh" to [s]earch the [h]elp documentation,
-If you experience any errors while trying to install kickstart, run `:checkhealth` for more info.
 -- See `:help vim.opt`
 --  For more options, you can see `:help option-list`
 --  See `:help 'list'`
