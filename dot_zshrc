@@ -69,7 +69,10 @@ fpath+="$HOME/.zsh/completions"
 export PATH="$PATH:/Users/devspaceship/.local/bin"
 export PATH="$PATH:/usr/local/opt/ruby/bin"
 
+# Ruby
 eval "$(rbenv init - zsh)"
+## fix pre-commit being shadowed by rbenv
+alias pre-commit=/usr/local/bin/pre-commit
 
 # pnpm
 export PNPM_HOME="/Users/devspaceship/Library/pnpm"
@@ -78,3 +81,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
