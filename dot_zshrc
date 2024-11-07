@@ -74,6 +74,9 @@ eval "$(rbenv init - zsh)"
 ## fix pre-commit being shadowed by rbenv
 alias pre-commit=/usr/local/bin/pre-commit
 
+# Java
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+
 # pnpm
 export PNPM_HOME="/Users/devspaceship/Library/pnpm"
 case ":$PATH:" in
