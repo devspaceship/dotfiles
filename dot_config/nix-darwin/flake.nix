@@ -16,8 +16,12 @@
           curl
           git
           htop
+          markdownlint-cli
           neofetch
           neovim
+          nodejs_22
+          pnpm
+          python313
           tmux
           wget
         ];
@@ -36,8 +40,8 @@
       };
     in
     {
-      # Build darwin flake using:
-      # $ darwin-rebuild build --flake .#macos
+      # Build and activate darwin flake using:
+      # $ darwin-rebuild switch --flake .#macos
       darwinConfigurations."macos" = nix-darwin.lib.darwinSystem {
         modules = [ configuration ];
       };
