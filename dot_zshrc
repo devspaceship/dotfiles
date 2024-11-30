@@ -31,10 +31,6 @@ TIMER_FORMAT='[%d]'
 bindkey -v
 
 # Aliases
-## Nvim
-alias vim=nvim
-alias vi=nvim
-
 ## Docker Compose
 alias dc="docker compose"
 alias dcu="docker compose up"
@@ -46,8 +42,20 @@ alias dclf="docker compose logs -f"
 alias dce="docker compose exec"
 alias dcr="docker compose run"
 
+## Home Manager
+alias hm='home-manager'
+alias hms='home-manager switch'
+
+## Nvim
+alias vim='nvim'
+alias vi='nvim'
+alias v='nvim'
+
 ## Pnpm
 alias pn="pnpm"
+alias pnx="pnpx"
+alias npm="pnpm"
+alias npx="pnpx"
 
 # User Config
 export EDITOR="nvim"

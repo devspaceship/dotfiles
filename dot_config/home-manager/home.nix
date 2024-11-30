@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   home.username = "devspaceship";
@@ -14,12 +14,19 @@
   # home.stateVersion = "24.05"; # Please read the comment before changing.
   home.stateVersion = "25.05";
 
+  nixGL.packages = import <nixgl> { inherit pkgs; };
+  nixGL.defaultWrapper = "mesa";
+  nixGL.offloadWrapper = "nvidiaPrime";
+  nixGL.installScripts = [ "mesa" "nvidiaPrime" ];
+
   home.packages = with pkgs; [
+    (config.lib.nixGL.wrap kitty)
     htop
     ripgrep
     fzf
     lazygit
-    kitty
+    cmatrix
+    tree
     # (nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
 
@@ -60,5 +67,4 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-  # programs.emacs.enable = true;
 }
