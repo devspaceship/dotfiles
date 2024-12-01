@@ -29,6 +29,12 @@
         nix.settings.experimental-features = "nix-command flakes";
         nixpkgs.hostPlatform = "x86_64-darwin";
 
+        security.pam.enableSudoTouchIdAuth = true;
+
+        system.defaults = {
+          dock.autohide = true;
+        };
+
         programs.zsh.enable = true;
 
         # Set Git commit hash for darwin-version.
